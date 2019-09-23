@@ -1,0 +1,94 @@
+/* core colors  #ed1b23 vermelho */
+:root {
+    --primary: rgb(255,0,0);
+    --light: #ff6666;
+    --secondary: #0cf0af;
+    --light-secondary: #67f5cc;
+    --dark: #453434;
+    --branco: white;
+}
+body {
+    background: url('../images/paw.png');
+}
+/* .gato {
+    position: absolute;
+    top: 29.2%;
+    right: 23.2%;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+} */
+
+.header-form {
+    height: 100px;
+}
+.brand {
+    float: none;
+}
+
+/* FORMULARIO */
+#formulario {
+    margin-top: 30px;
+    text-align: center;
+}
+.contact-title {
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+.contact-title h1 {
+    font-size: 32px;
+}
+form {
+    margin-top: 30px;
+    transition: all .5s ease-in-out;
+}
+.form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 16px;
+    max-width: 700px;
+     background: white; /*linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,.5)); */
+}
+textarea {
+    resize: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+input {
+    height: 35px;
+}
+form .submit {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 20px;
+    transition: .3s;
+    opacity: .8;
+}
+form .submit:hover {
+    opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 780px) {
+    .contact-title h1 {
+        font-size: 1.6rem;
+    }
+    .brand-text-2 {
+        color: black;
+    }
+    .form-control, textarea {
+        font-size: 14px;
+    }
+}
